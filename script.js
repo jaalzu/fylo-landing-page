@@ -103,67 +103,67 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// // SCROLL REVEAL FUNC 
+// SCROLL REVEAL FUNC 
 
-// // SCROLL REVEAL HIDE IN MOBILE 
-// function initScrollReveal(){
-//     const isMobile = window.matchMedia("(max-width:868px)").matches
-
-
-// if(!isMobile){
-// ScrollReveal().reveal('.access', {
-//     delay:500,
-//     origin:'left',
-//     distance:'40px',
-//     easing: 'ease-in-out', 
-//     opacity: 0, duration: 1000
-// });
+// SCROLL REVEAL HIDE IN MOBILE 
+function initScrollReveal(){
+    const isMobile = window.matchMedia("(max-width:868px)").matches
 
 
+if(!isMobile){
+ScrollReveal().reveal('.access', {
+    delay:500,
+    origin:'left',
+    distance:'40px',
+    easing: 'ease-in-out', 
+    opacity: 0, duration: 1000
+});
 
 
-// ScrollReveal().reveal('.stay-productive', {
-//      origin:'bottom',
-//      delay: 400,
-//      distance:'50px',
-//      easing: 'ease-in-out' ,
-//      interval:500,
-//      opacity: 0, duration: 1000
-//     });
 
 
-// ScrollReveal().reveal('.comments', {
-//      delay: 600,
-//      origin:'left',
-//      distance:'30px',
-//      easing: 'ease' ,
-//      interval:200,
-//      opacity: 0, duration: 1000
+ScrollReveal().reveal('.stay-productive', {
+     origin:'bottom',
+     delay: 400,
+     distance:'50px',
+     easing: 'ease-in-out' ,
+     interval:500,
+     opacity: 0, duration: 1000
+    });
 
-//     });
+
+ScrollReveal().reveal('.comments', {
+     delay: 600,
+     origin:'left',
+     distance:'30px',
+     easing: 'ease' ,
+     interval:200,
+     opacity: 0, duration: 1000
+
+    });
 
 
-// ScrollReveal().reveal('.early__access', {
-//      delay: 1000,
-//      origin:'right',
-//      distance:'30px',
-//      easing: 'ease' ,
-//      interval:600,
-//      opacity: 0, duration: 1000
-//     });
+ScrollReveal().reveal('.early__access', {
+     delay: 1000,
+     origin:'right',
+     distance:'30px',
+     easing: 'ease' ,
+     interval:600,
+     opacity: 0, duration: 1000
+    });
 
     
-// ScrollReveal().reveal('.footer', {
-//      delay: 600,
-//      origin:'left',
-//      distance:'20px',
-//      easing: 'ease' ,
-//      interval:400,
-//      opacity: 0, duration: 1000
+ScrollReveal().reveal('.footer', {
+     delay: 600,
+     origin:'left',
+     distance:'20px',
+     easing: 'ease' ,
+     interval:400,
+     opacity: 0, duration: 1000
 
-//     });
-// }};
+    });
+}};
 
-// document.addEventListener('DOMContentLoaded', initScrollReveal);
+document.addEventListener('DOMContentLoaded', initScrollReveal);
 
-// window.addEventListener('resize', initScrollReveal);
+window.addEventListener('resize', initScrollReveal);
