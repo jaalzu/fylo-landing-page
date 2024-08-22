@@ -1,9 +1,6 @@
 .access{
-    margin-block: 2rem;
     text-align: center;
-    margin-bottom: 13rem;
-    padding-top: 5rem;
-   
+    margin-block: 6rem;
 
     
     .access__grid{
@@ -14,13 +11,12 @@
 
         .box__item{
             text-align: center;
-            margin: 0 auto;
+            margin: 3rem auto;
 
             img{
                 margin: 0 auto;
                 max-width: 100%;
                 margin-bottom: 2.5rem;
-                margin-top: 6rem;
             }
 
             h2{
@@ -34,17 +30,11 @@
     }
 }
 
-@media screen and (min-width:500px){
-    .access{
-        padding-top: 10rem;
-    }
-}
+
 
 
 @media screen and (min-width:800px){
     .access{
-        padding-top: 7rem;
-        margin-block: 8rem;
         margin-inline: 2rem;
 
         .access__grid{
@@ -77,8 +67,6 @@
 
 @media screen and (min-width:1150px){
     .access{
-        padding-top: 16rem;
-        padding-bottom: 5rem;
         margin-inline: 3.5rem;
         display: flex;
 
@@ -95,7 +83,6 @@
 
 @media screen and (min-width:1500px){
     .access{
-        padding-top: 17rem;
         margin-inline: 5.5rem;
         
         .access__grid{

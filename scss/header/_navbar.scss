@@ -12,9 +12,10 @@
         background-color: $dark-blue-footer;
         position: fixed;
         right: 0%;
-        transform: translateX(100%);
         top: 0;
         height: 100vh;
+        transform: translateX(100%);
+
         width: 60%;
         transition: left .4s linear;
 
@@ -55,10 +56,12 @@
 .nav__icons{
     font-size: 2rem;
     color: white;
-    z-index: 1000;
+    z-index: 1000000;
     display: flex;
     align-items: center;
-
+    position: fixed;
+    right: 6%;
+    top: 4%;
     #close-menu{
         display: none;
     }
