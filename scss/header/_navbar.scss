@@ -1,10 +1,11 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding-block: 1rem;
+    margin-bottom: 1rem;
 
     img{
        max-width: 40%;
+       margin-top: 1.4rem;
     }
 
     .nav__list {
@@ -72,9 +73,9 @@
 
 @media screen and (min-width:800px){
     .navbar{
-        padding-top: 2rem;
+        padding-top: 3rem;
         align-items: center;
-             margin-left: 1rem;
+             margin-left: 2rem;
 
         .nav__list{
                 position: static;
@@ -82,8 +83,9 @@
                 display: flex;
                 justify-content: center;
                 background-color: transparent;
-                width: 40%;
+                width: 30%;
                 transform: translateX(0%);
+
 
                 ul{
                     align-items: center;

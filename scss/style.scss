@@ -43,7 +43,7 @@ h1,h2,h3{
 a{
     font-family: $font-primary;
     position: relative;
-    color: rgba(255, 255, 255, 0.752);
+    color: $light-gray;
     cursor: pointer;
 }
 
@@ -84,7 +84,7 @@ p{
 .access,
 .footer
 {
-    padding-inline: 1.7rem;
+    padding-inline: 2rem;
 }
 
 
@@ -97,13 +97,13 @@ p{
 
 
 // SCROLL REVEAL 
-.load-hidden {
-    visibility: hidden;
-}
+// .load-hidden {
+//     visibility: hidden;
+// }
 
-@media (max-width: 868px) {
-    .load-hidden {
-      visibility: visible; /* O cualquier otro estilo necesario */
-    }
-  }
+// @media (max-width: 868px) {
+//     .load-hidden {
+//       visibility: visible; /* O cualquier otro estilo necesario */
+//     }
+//   }
   

@@ -16,10 +16,11 @@ header {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding-block: 1rem;
+  margin-bottom: 1rem;
 }
 .navbar img {
   max-width: 40%;
+  margin-top: 1.4rem;
 }
 .navbar .nav__list {
   z-index: 1000;
@@ -70,9 +71,9 @@ header {
 
 @media screen and (min-width: 800px) {
   .navbar {
-    padding-top: 2rem;
+    padding-top: 3rem;
     align-items: center;
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
   .navbar .nav__list {
     position: static;
@@ -80,7 +81,7 @@ header {
     display: flex;
     justify-content: center;
     background-color: transparent;
-    width: 40%;
+    width: 30%;
     transform: translateX(0%);
   }
   .navbar .nav__list ul {
@@ -146,7 +147,7 @@ header {
   margin-bottom: 1.4rem;
 }
 .hero p {
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   margin-bottom: 1.8rem;
   padding-inline: 2rem;
 }
@@ -165,7 +166,7 @@ header {
     max-width: 80%;
   }
   .hero .hero__description h1 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     padding-inline: 2rem;
   }
   .hero .hero__description p {
@@ -181,6 +182,9 @@ header {
   }
   .hero .hero__description a {
     width: 31%;
+  }
+  .hero .hero__description h1 {
+    font-size: 2.5rem;
   }
 }
 @media screen and (min-width: 1550px) {
@@ -643,7 +647,7 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.3rem;
-  font-size: 0.95rem;
+  font-size: 1.02rem;
 }
 .footer .footer__grid .col {
   display: flex;
@@ -825,28 +829,19 @@ p {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.752);
   line-height: 1.5;
-  font-size: 0.95rem;
+  font-size: 1.02rem;
 }
 
 .hero,
 .navbar,
 .access,
 .footer {
-  padding-inline: 1.7rem;
+  padding-inline: 2rem;
 }
 
 @media screen and (min-width: 800px) {
   .footer {
     padding-inline: 2.5rem;
-  }
-}
-.load-hidden {
-  visibility: hidden;
-}
-
-@media (max-width: 868px) {
-  .load-hidden {
-    visibility: visible; /* O cualquier otro estilo necesario */
   }
 }
 
