@@ -2,7 +2,7 @@ header {
   width: 100%;
   height: 100vh;
   background-color: hsl(217, 28%, 15%);
-  background-image: url(/images/bg-curvy-mobile.svg);
+  background-image: url(./images/bg-curvy-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -10,7 +10,7 @@ header {
 
 @media screen and (min-width: 1100px) {
   header {
-    background-image: url(/images/bg-curvy-desktop.svg);
+    background-image: url(./images/bg-curvy-desktop.svg);
   }
 }
 .navbar {
@@ -77,8 +77,8 @@ header {
     display: flex;
     justify-content: center;
     background-color: transparent;
-    width: 30%;
-    margin-right: 1rem;
+    width: 40%;
+    transform: translateX(0%);
   }
   .navbar .nav__list ul {
     align-items: center;
