@@ -1,0 +1,21 @@
+.btn{
+    color: $white;
+    background:linear-gradient(to left,$blue,$cyan);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 58%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem;
+    font-family: $font-secondary;
+    font-weight: $weight-bold;
+    font-size: .9rem;
+    cursor: pointer;
+
+    &:hover{
+        background: $cyan;
+    }
+}

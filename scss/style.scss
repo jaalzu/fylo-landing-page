@@ -1,0 +1,109 @@
+@use 'variables' as *;
+@import '../scss/header/header';
+@import '../scss/header/navbar';
+@import '../scss/header/hero';
+@import 'mixins';
+@import 'button';
+@import '../scss/sections/access';
+@import '../scss/sections/stay-productive';
+@import '../scss/sections/comments';
+@import '../scss/sections/early__access';
+@import '../scss/sections/footer';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $dark-blue-main;
+}
+
+img{
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+
+h1,h2,h3,span{
+    color: $white;
+}
+
+h1,h2,h3{
+    font-family: $font-primary;
+    font-weight: $weight-bold;
+}
+
+a{
+    font-family: $font-primary;
+    position: relative;
+    color: rgba(255, 255, 255, 0.752);
+    cursor: pointer;
+}
+
+
+
+.nav__links{
+    &::after{
+        content: '';
+        position: absolute;
+        width: 0%;
+        bottom: -10%;
+        left: 0;
+        height: 1px;
+        background-color: white;
+        transition: .2s linear;
+
+    }
+    &:hover::after{
+        width: 100%;
+    }
+}
+
+
+p{
+    font-family: $font-secondary;
+    font-weight: $weight-regular;
+    color: $light-gray;
+    line-height: 1.5;
+    font-size: $font-size-p;
+}
+
+
+
+// PADDING SECTIONS 
+
+.hero,
+.navbar,
+.access,
+.footer
+{
+    padding-inline: 1.7rem;
+}
+
+
+
+@media screen and (min-width:800px){
+    .footer{
+        padding-inline: 2.5rem;
+    }
+}
+
+
+// SCROLL REVEAL 
+.load-hidden {
+    visibility: hidden;
+}
+
+@media (max-width: 868px) {
+    .load-hidden {
+      visibility: visible; /* O cualquier otro estilo necesario */
+    }
+  }
+  

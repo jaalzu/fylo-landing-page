@@ -1,0 +1,155 @@
+.stay-productive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 13rem;
+    padding-inline: 1.5rem;
+    
+    .productive__img{
+
+        img{
+            max-width: 100%;
+            margin-bottom: 3rem;
+           }
+    }
+
+    .productive__description{
+
+        h2{
+            margin-bottom: 1.6rem;
+            font-size: 1.4rem;
+        }
+        
+        p{
+            margin-bottom: 1.1rem;
+            width: 100%;
+        }
+        
+        a{
+            display: flex;
+            gap: .5rem;
+            color: $cyan;
+            position: relative;
+            align-items: center;
+            font-size: .9rem;
+            transition: .4s ease;
+
+            &:hover{
+                transform: translateX(3%);
+            }
+
+            img{
+               width: 5.8%;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -30%;
+                left: 0;
+                width: 42%;
+                height: 2px;
+                background-color: $cyan;
+                transition: .4s ease;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width:800px){
+    .stay-productive{
+        flex-direction: row;
+        padding-inline: 2rem;
+        column-gap: 2rem;
+
+        .productive__img{
+
+            img{
+                margin-right: 25rem;
+                width: 100%;
+            }
+        }
+
+        .productive__description{
+            
+            h2{
+                font-size: 1.7rem;
+                margin-bottom: 1rem;
+                max-width: 80%;
+            }
+
+            p{
+                font-size: .830rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width:1150px){
+    .stay-productive{
+        padding-inline: 4rem;
+
+            .productive__img{
+                
+                img{
+                    margin-right: 35rem;
+                }
+            }
+
+            .productive__description{
+
+                h2{
+                    font-size: 2rem;
+                    max-width: 60%;
+                }
+
+                p{
+                    font-size: .845rem;
+                    padding-right: 1rem;
+                    letter-spacing: .2px;
+                    max-width: 95%;
+                }
+
+                a{
+                    width: 60%;
+                }
+            }
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1500px){
+    .stay-productive{
+        padding-inline: 10rem;
+
+        .productive__img{
+            padding-right: 2rem;
+        }
+
+        .productive__description{
+            
+            a{
+                width: 55%;
+            }
+        }
+    }
+}

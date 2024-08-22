@@ -1,0 +1,138 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem;
+
+    img{
+       max-width: 40%;
+    }
+
+    .nav__list {
+        z-index: 1000;
+        background-color: $dark-blue-footer;
+        position: fixed;
+        right: 0%;
+        transform: translateX(100%);
+        top: 0;
+        height: 100vh;
+        width: 60%;
+        transition: left .4s linear;
+
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+            padding-top: 10rem;
+            gap: 3rem;
+            
+            li a{
+                color: rgba(255, 255, 255, 0.752);
+                font-size: 1.1rem;
+                margin-left: 1rem;
+            }
+
+        }
+
+       
+
+
+
+        .sign__in{
+            border: 1px solid white;
+            width: 80%;
+            padding: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .show-menu{
+        transform: translateX(0%);
+    }
+
+
+.nav__icons{
+    font-size: 2rem;
+    color: white;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+
+    #close-menu{
+        display: none;
+    }
+}
+}
+
+
+
+@media screen and (min-width:800px){
+    .navbar{
+        padding-top: 2rem;
+        align-items: center;
+             margin-left: 1rem;
+
+        .nav__list{
+                position: static;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                background-color: transparent;
+                width: 30%;
+                margin-right: 1rem;
+
+                ul{
+                    align-items: center;
+                    padding-top: 0;
+                    flex-direction: row;
+                    gap: 2rem;
+                    padding-right: 1rem;
+
+                    li a{
+                        font-size: .980rem;
+                    }
+                
+                }
+
+
+                .sign__in{
+                    margin-left: 1.5rem;
+                    width: 100%;
+                    padding: 0;
+                    border: none;
+                    align-items: inherit;
+                    justify-content: inherit;
+                    transition: .2s ease;
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 0%;
+                        bottom: -10%;
+                        left: 0;
+                        height: 1px;
+                        background-color: white;
+                        transition: .2s linear;
+                    }
+
+                    &:hover::after{
+                        width: 70%;
+                    }
+                }
+            }
+
+            .nav__icons{
+                display: none;
+            }
+        }
+}
+
+
+@media screen and (min-width:1500px){
+
+    .navbar{
+        padding-top: 2.2rem;
+        margin-left: 3rem;
+    }
+}
